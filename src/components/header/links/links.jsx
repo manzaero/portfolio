@@ -1,15 +1,52 @@
 import {NavLink} from "react-router-dom";
+import styled from "styled-components";
 
 const LinksContainer = ({className}) => {
     return (
         <div className={className}>
             <ul>
-                <NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Home</NavLink>
-                <NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>About</NavLink>
-                <NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Tech Stack</NavLink>
-                <NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Projects</NavLink>
-                <NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Contact</NavLink>
+                <li><NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Home</NavLink></li>
+                <li><NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>About</NavLink></li>
+                <li><NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Stack</NavLink></li>
+                <li><NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Projects</NavLink></li>
+                <li><NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Contact</NavLink></li>
             </ul>
         </div>
     )
 }
+
+export const Links = styled(LinksContainer)`
+    ul {
+        font-size: 16px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #a6f6f6 !important;
+        }
+
+        &.active {
+            color: #A7A7A7;
+        }
+
+        &.active:hover {
+            color: #a6f6f6;
+        }
+    }
+`;

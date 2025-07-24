@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import {Links, Logo, Social} from './index'
 
 const HeaderContainer = ({className}) => {
     return (
         <div className={className}>
-
+            <Logo/>
+            <Links/>
+            <Social/>
         </div>
     )
 }
@@ -14,7 +17,6 @@ export const Header = styled(HeaderContainer)`
     justify-content: space-between;
     height: 50px;
     margin-top: 25px;
-    border-bottom: 1px solid #46A35880;
     padding-bottom: 25px;
     width: 100%;
 `

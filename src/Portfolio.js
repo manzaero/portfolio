@@ -1,25 +1,27 @@
 import styled from "styled-components";
+import {Header} from "./components/header/header";
 
 const AppColumn = styled.div`
-    background-color: #444;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 1250px;
+    width: 100%;
     min-height: 100%;
     margin: 0 auto;
-    padding: 0 25px;
 `
 
 const Pages = styled.div`
-    padding: 50px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 `
 
 export const Portfolio = () => {
   return (
       <AppColumn>
           <Pages>
-              {/*<Header/>*/}
+              <Header/>
           </Pages>
       </AppColumn>
   )

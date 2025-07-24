@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const LogoContainer = ({className}) => (
     <Link to='/' className={className}>
-        <img src="../../../assets/logo.svg" alt=""/>
+        <img src="/assets/logo.svg" alt=""/>
     </Link>
 )
 
@@ -11,7 +11,14 @@ export const Logo = styled(LogoContainer)`
     display: flex;
     align-items: center;
     height: 100%;
-    @media (max-width: 768px){
-    display: none;
-}
+    img {
+        height: 100%;
+        width: auto;
+        display: block;
+        transition: filter 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            filter: hue-rotate(90deg) brightness(1.2);
+        }
+    }
 `
