@@ -1,13 +1,13 @@
 import {Link} from "react-router-dom";
 import styled from "styled-components";
 
-const LogoContainer = ({className}) => (
+const UpLogoContainer = ({className}) => (
     <Link to='/' className={className}>
         <img src="/assets/logo.svg" alt=""/>
     </Link>
 )
 
-export const Logo = styled(LogoContainer)`
+export const UpLogo = styled(UpLogoContainer)`
     display: flex;
     align-items: center;
     height: 100%;
@@ -18,7 +18,7 @@ export const Logo = styled(LogoContainer)`
         transition: filter 0.9s ease, transform 0.9s ease;
 
         &:hover {
-            filter: hue-rotate(60deg) brightness(1.3) saturate(1.5);;
+            filter: sepia(90%) hue-rotate(300deg) brightness(89%) contrast(110%);
         }
     }
 `
