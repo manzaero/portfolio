@@ -10,7 +10,6 @@ const AuthorContainer = ({className}) => {
 
 export const Author = styled(AuthorContainer)`
     font-size: 18px;
-    color: #a7a7a7;
     span:first-child {
         font-weight: 600;
         background: linear-gradient(90deg, #7b61ff, #dd16ad);

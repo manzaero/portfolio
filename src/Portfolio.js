@@ -7,7 +7,7 @@ const AppColumn = styled.div`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: #fff;
+    color: #a7a7a7;
 
     padding: 0 300px;
     box-sizing: border-box;
@@ -29,10 +29,10 @@ export const Portfolio = () => {
             <Pages>
                 <Routes>
                     <Route path='/' element={<div>Home</div>}></Route>
-                    <Route path='/' element={<div>Home</div>}></Route>
-                    <Route path='/' element={<div>Home</div>}></Route>
-                    <Route path='/' element={<div>Home</div>}></Route>
-                    <Route path='/' element={<div>Home</div>}></Route>
+                    <Route path='/about' element={<div>About</div>}></Route>
+                    <Route path='/stack' element={<div>Stack</div>}></Route>
+                    <Route path='/projects' element={<div>Projects</div>}></Route>
+                    <Route path='/contact' element={<div>Contact</div>}></Route>
                 </Routes>
             </Pages>
           <Footer/>

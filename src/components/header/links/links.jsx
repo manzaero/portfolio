@@ -6,10 +6,10 @@ const LinksContainer = ({className}) => {
         <div className={className}>
             <ul>
                 <li><NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Home</NavLink></li>
-                <li><NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>About</NavLink></li>
-                <li><NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Stack</NavLink></li>
-                <li><NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Projects</NavLink></li>
-                <li><NavLink to='/' className={({isActive})=> (isActive ? 'active' : '')}>Contact</NavLink></li>
+                <li><NavLink to='/about' className={({isActive})=> (isActive ? 'active' : '')}>About</NavLink></li>
+                <li><NavLink to='/stack' className={({isActive})=> (isActive ? 'active' : '')}>Stack</NavLink></li>
+                <li><NavLink to='/projects' className={({isActive})=> (isActive ? 'active' : '')}>Projects</NavLink></li>
+                <li><NavLink to='/contact' className={({isActive})=> (isActive ? 'active' : '')}>Contact</NavLink></li>
             </ul>
         </div>
     )
@@ -34,7 +34,7 @@ export const Links = styled(LinksContainer)`
     a {
         font-weight: 600;
         text-decoration: none;
-        color: black;
+        color: #a7a7a7;
         transition: color 0.3s ease;
 
         &:hover {
@@ -42,7 +42,7 @@ export const Links = styled(LinksContainer)`
         }
 
         &.active {
-            color: #A7A7A7;
+            color: #e91ed9;
         }
 
         &.active:hover {
