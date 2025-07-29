@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Footer, Header} from "./components/index";
+import {Route, Routes} from "react-router-dom";
 
 const AppColumn = styled.div`
     background-color: #000;
@@ -7,6 +8,9 @@ const AppColumn = styled.div`
     flex-direction: column;
     min-height: 100vh;
     color: #fff;
+
+    padding: 0 300px;
+    box-sizing: border-box;
 `;
 
 const Pages = styled.div`
@@ -14,22 +18,24 @@ const Pages = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 `;
 
-const MainContent = styled.div`
-    flex: 1;
-`;
+
 
 export const Portfolio = () => {
   return (
       <AppColumn>
-          <Pages>
-              <Header/>
-              <MainContent>Main page</MainContent>
-              <Footer/>
-          </Pages>
+          <Header/>
+            <Pages>
+                <Routes>
+                    <Route path='/' element={<div>Home</div>}></Route>
+                    <Route path='/' element={<div>Home</div>}></Route>
+                    <Route path='/' element={<div>Home</div>}></Route>
+                    <Route path='/' element={<div>Home</div>}></Route>
+                    <Route path='/' element={<div>Home</div>}></Route>
+                </Routes>
+            </Pages>
+          <Footer/>
       </AppColumn>
   )
 }

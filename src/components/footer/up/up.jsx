@@ -18,7 +18,6 @@ export const Up = styled(UpContainer)`
     justify-content: space-between;
     height: 50px;
     margin-top: 25px;
-    padding-bottom: 25px;
     width: 100%;
     .right {
         display: flex;
