@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {Footer, Header} from "./components/index";
 import {Route, Routes} from "react-router-dom";
+import {Home} from "./pages";
 
 const AppColumn = styled.div`
     background-color: #000;
@@ -28,7 +29,7 @@ export const Portfolio = () => {
           <Header/>
             <Pages>
                 <Routes>
-                    <Route path='/' element={<div>Home</div>}></Route>
+                    <Route path='/' element={<Home/>}></Route>
                     <Route path='/about' element={<div>About</div>}></Route>
                     <Route path='/stack' element={<div>Stack</div>}></Route>
                     <Route path='/projects' element={<div>Projects</div>}></Route>
