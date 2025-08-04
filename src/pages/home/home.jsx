@@ -1,7 +1,8 @@
 import gif from "../../assets/images/gifs/sticker_5.webp"
 import im from "../../assets/images/i'm.png"
 import styled from "styled-components";
-import {Title} from "../../components";
+import {TechStack} from "../../components/stack/stack";
+import {ProjectCart} from "../../components/project-cart/project-cart";
 
 const HomeComponent = ({className}) => {
     return (
@@ -16,11 +17,8 @@ const HomeComponent = ({className}) => {
                     <img src={im} alt=""/>
                 </div>
             </div>
-            <Title
-                title="My Tech Stack"
-                subtitle="Technologies I’ve been working with recently"
-            />
-
+            <TechStack/>
+            <ProjectCart/>
         </>
     )
 }
