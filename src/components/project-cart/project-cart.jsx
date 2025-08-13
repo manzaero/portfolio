@@ -8,6 +8,8 @@ const projectImages = [
     {img: plants}
 ]
 
+
+
 const ProjectCartContainer = ({className}) => {
     return (
         <>
