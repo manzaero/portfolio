@@ -35,7 +35,7 @@ const ProjectCartContainer = ({className}) => {
                                     {item.description}
                                 </div>
                                 <div className="tech_stack">
-                                    Tech stack : {item.stack}
+                                    Tech stack : {item.tech}
                                 </div>
                                 <div className="links">
                                     <div className="link-prew">

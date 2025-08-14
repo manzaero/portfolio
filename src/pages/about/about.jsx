@@ -17,13 +17,23 @@ const AboutContainer = ({className}) => {
             <h3>Education</h3>
             <div className='stages'>
                 <div>
-                    <h2>Junior Fullstack Developer (React + NodeJs)</h2>
+                    <h2>Junior Fullstack Developer (React, NodeJs)</h2>
                     <div className="dev-point">
                         <div className='point'>
                             <p>Educational platform from Vladilen Minin</p>
                             <p>Saint Petersburg</p>
                         </div>
                         <p>July 2024 - August 2025</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Junior Fullstack Developer (Vue, Laravel)</h2>
+                    <div className="dev-point">
+                        <div className='point'>
+                            <p>Self-taught, self-study and writing code on the Vue & Laravel framework</p>
+                            <p>Everywhere</p>
+                        </div>
+                        <p>From 2014 to the present day</p>
                     </div>
                 </div>
                 <div>
@@ -68,9 +78,12 @@ export const About = styled(AboutContainer)`
         width: 600px;
         justify-content: space-between;
     }
-    //.point p:nth-child(1) {
-    //    margin-right: 40px;
-    //}
+    h2 {
+        font-weight: 600;
+        background: linear-gradient(90deg, #7b61ff, #dd16ad);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     .dev-point {
         display: flex;
         justify-content: space-between;
