@@ -18,7 +18,7 @@ export const Logo = styled(LogoContainer)`
         transition: filter 0.9s ease, transform 0.9s ease;
 
         &:hover {
-            filter: hue-rotate(60deg) brightness(1.3) saturate(1.5);;
+            filter: hue-rotate(60deg) brightness(1.3) saturate(1.5);
         }
     }
 `

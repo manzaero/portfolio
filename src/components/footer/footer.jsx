@@ -13,6 +13,7 @@ const FooterContainer = ({className}) => {
     )
 }
 export const Footer = styled(FooterContainer)`
+    padding-top: 100px;
     .hr {
         border: solid 1px #252633;
         margin: 25px 0;

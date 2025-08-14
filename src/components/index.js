@@ -1,3 +1,6 @@
 export * from './footer/footer'
 export * from './header/header'
 export * from './title/title'
+export * from './welcome/welcome'
+export * from './stack/stack'
+export * from './project-cart/project-cart'
