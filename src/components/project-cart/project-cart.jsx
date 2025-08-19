@@ -25,7 +25,7 @@ const ProjectCartContainer = ({className}) => {
                 {
                     data?.map((item) => (
                         <div className="card" key={item.id}>
-                            <img className="img" src={item.img}
+                            <img className="img" src={process.env.PUBLIC_URL + "/assets/images/projects/" + item.img}
                                  alt="Plants"/>
                             <div className="description">
                                 <div className="title">
