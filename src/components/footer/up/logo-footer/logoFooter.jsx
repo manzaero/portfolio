@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const UpLogoContainer = ({className}) => (
     <Link to='/' className={className}>
-        <img src="/assets/logo.svg" alt=""/>
+        <img src={process.env.PUBLIC_URL + "/assets/logo.svg"} alt=""/>
     </Link>
 )
 
