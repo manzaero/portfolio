@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {Portfolio} from "./Portfolio";
-import {BrowserRouter} from "react-router-dom";
+import { Portfolio } from "./Portfolio";
+import { HashRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename="/portfolio">
-    <Portfolio />
-  </BrowserRouter>
+    <HashRouter>
+        <Portfolio />
+    </HashRouter>
 );
