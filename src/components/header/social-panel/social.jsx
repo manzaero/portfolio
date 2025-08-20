@@ -5,13 +5,13 @@ const SocialPanel = ({className}) => {
         <div className={className}>
             <ul>
                 <a href="https://github.com/manzaero" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/icons/github.svg" alt=""/>
+                    <img src={process.env.PUBLIC_URL + "/assets/icons/github.svg"} alt=""/>
                 </a>
                 <a href="https://www.linkedin.com/in/manzaero/" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/icons/linked.svg" alt=""/>
+                    <img src={process.env.PUBLIC_URL + "/assets/icons/linked.svg"} alt=""/>
                 </a>
                 <a href="https://t.me/manzaero" target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/icons/tg.svg" alt=""/>
+                    <img src={process.env.PUBLIC_URL + "/assets/icons/tg.svg"} alt=""/>
                 </a>
             </ul>
         </div>
