@@ -6,9 +6,7 @@ const WelcomeContainer = ({className}) => {
     return (
         <div className={className}>
             <div className="welcome-section">
-                <p>Hi <img src={gif} alt=""/>, </p>
-                <p>I'm <span>Mansur RT</span>,</p>
-                <p>and I design digital spaces</p>
+                <p>Hi <img src={gif} alt=""/>, I'm <span>Mansur RT</span>, and I design digital spaces</p>
             </div>
             <div className="image">
                 <img src={im} alt=""/>
@@ -21,7 +19,7 @@ export const Welcome = styled(WelcomeContainer)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 250px 0;
+    margin: 270px 0;
     span {
         font-weight: 600;
         background: linear-gradient(90deg, #7b61ff, #dd16ad);
@@ -29,8 +27,7 @@ export const Welcome = styled(WelcomeContainer)`
         -webkit-text-fill-color: transparent;
     }
     .welcome-section {
-        font-size: 58px;
-        line-height: 10px;
+        font-size: clamp(18px, 5vw, 50px);
     }
     .welcome-section img {
         width: 58px;
@@ -42,9 +39,14 @@ export const Welcome = styled(WelcomeContainer)`
         display: inline-block;
     }
     .image img {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         border-radius: 50%;
         display: block;
+    }
+    @media (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0;
     }
 `

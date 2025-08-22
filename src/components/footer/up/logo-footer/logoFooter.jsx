@@ -21,4 +21,7 @@ export const UpLogo = styled(UpLogoContainer)`
             filter: sepia(90%) hue-rotate(300deg) brightness(89%) contrast(110%);
         }
     }
+    @media (max-width: 768px) {
+        display: none;
+    }
 `

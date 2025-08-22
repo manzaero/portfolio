@@ -27,7 +27,7 @@ export const Social = styled(SocialPanel)`
         padding: 0;
     }
     img {
-        width: 100%;
+        width: 70%;
         height: auto;
         max-width: 40px;
         min-width: 24px;
@@ -36,5 +36,8 @@ export const Social = styled(SocialPanel)`
         &:hover {
             transform: scale(1.1);
         }
+    }
+    @media (max-width: 1200px) {
+        display: none;
     }
 `

@@ -65,27 +65,121 @@ const AboutContainer = ({className}) => {
 export const About = styled(AboutContainer)`
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+
     h3 {
         font-size: 42px;
         color: white;
     }
+
     p {
         font-size: 18px;
+        line-height: 1.5;
     }
+
     .point {
         display: flex;
-        width: 600px;
         justify-content: space-between;
+        width: 100%;
+        max-width: 600px;
     }
+
     h2 {
         font-weight: 600;
         background: linear-gradient(90deg, #7b61ff, #dd16ad);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
     .dev-point {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
     }
-`
+
+    @media (max-width: 1400px) {
+        max-width: 800px;
+
+        h3 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 700px;
+
+        h3 {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .point {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+
+        h3 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        .dev-point {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h3 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        .point {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+    }
+`;

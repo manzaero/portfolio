@@ -9,7 +9,7 @@ const AuthorContainer = ({className}) => {
 }
 
 export const Author = styled(AuthorContainer)`
-    font-size: 18px;
+    font-size: 14px;
     span:first-child {
         font-weight: 600;
         background: linear-gradient(90deg, #7b61ff, #dd16ad);
@@ -17,9 +17,13 @@ export const Author = styled(AuthorContainer)`
         -webkit-text-fill-color: transparent;
     }
     span:last-child {
-        font-size: 18px;
+        font-size: 14px;
+        font-weight: 600;
         background: linear-gradient(90deg, #c52dd8 , #e91ed9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    @media (max-width: 1400px) {
+        margin: 20px auto;
     }
 `

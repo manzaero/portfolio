@@ -45,4 +45,10 @@ export const Contact = styled(contactContainer)`
             color: #a6f6f6;
         }
     }
+    @media (max-width: 480px){
+         ul {
+             display: flex;
+             flex-direction: column;
+         }
+    }
 `

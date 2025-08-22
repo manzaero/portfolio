@@ -24,4 +24,12 @@ export const Up = styled(UpContainer)`
         align-items: center;
         gap: 30px;
     }
+    @media (max-width: 768px) {
+        padding-bottom: 20px;
+        .right {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    }
 `

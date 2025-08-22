@@ -16,8 +16,9 @@ const LinksContainer = ({className}) => {
 }
 
 export const Links = styled(LinksContainer)`
+    margin: 0 5px;
     ul {
-        font-size: 16px;
+        font-size: 14px;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 10px;

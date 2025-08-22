@@ -46,4 +46,7 @@ export const UpSocial = styled(SocialFooterContainer)`
             transform: scale(1.1);
         }
     }
+    @media (max-width: 480px){
+        display: none;
+    }
 `

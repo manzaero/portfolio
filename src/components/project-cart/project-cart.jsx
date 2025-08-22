@@ -19,7 +19,7 @@ const ProjectCartContainer = ({className}) => {
         <>
             <Title
                 title="Projects"
-                subtitle="Projects I have implemented."
+                subtitle="Projects I have implemented"
             />
             <div className={className}>
                 {
@@ -61,88 +61,81 @@ const ProjectCartContainer = ({className}) => {
 }
 
 export const ProjectCart = styled(ProjectCartContainer)`
-    
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
     .card {
         display: flex;
         flex-direction: column;
-        width: 375px;
+        width: 100%;
         height: 100%;
         border-radius: 3%;
         overflow: hidden;
-    }
-    .description {
-        padding: 26px;
-        background-color: #363636;
+        gap: 20px;
+        padding: 15px;
     }
 
     .img {
-        width: 375px;
-        height: 260px;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
     }
-
-    .title {
-        font-size: 26px;
-        font-weight: 300;
-        margin-bottom: 18px;
-    }
-
-    .content {
-        font-size: 18px;
-        font-weight: 300;
-        margin-bottom: 12px;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .tech_stack {
-        font-size: 14px;
-        font-weight: 300;
-        margin-bottom: 22px;
-    }
-
+    
     .links {
         display: flex;
         justify-content: space-between;
+        margin-top: auto;
     }
-
-    .link-prew,
-    .link-code {
+    
+    .links img {
+        margin-right: 10px;
+    }
+    
+    .description {
         display: flex;
-        align-items: center;
-        gap: 8px;
-
+        flex-direction: column;
+        gap: 12px;
+        flex: 1;
+    }
+    
+    .title {
+        color: #e91ed9;
     }
 
-    .octagon-loader {
-        --size: 80px;
-
-        width: var(--size);
-        aspect-ratio: 1 / 1;
-        position: relative;
-
-        background: linear-gradient(45deg, #4f46e5, #22d3ee);
-        clip-path: polygon(
-                30% 0%, 70% 0%,
-                100% 30%, 100% 70%,
-                70% 100%, 30% 100%,
-                0% 70%, 0% 30%
-        );
-
-        animation: spin 1.2s linear infinite;
-
-        filter: hue-rotate(60deg) brightness(1.3) saturate(1.5);
+    @media (max-width: 1400px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    @keyframes spin {
-        to {
-            transform: rotate(360deg);
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+
+        .title { font-size: 22px; }
+        .content { font-size: 16px; }
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+
+        .title { font-size: 20px; }
+        .content { font-size: 15px; }
+    }
+
+    @media (max-width: 480px) {
+        .title { font-size: 18px; }
+        .content { font-size: 14px; }
+        .tech_stack { font-size: 12px; }
+
+        .links {
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
         }
     }
 
-`
+    @media (max-width: 320px) {
+        .title { font-size: 16px; }
+        .content { font-size: 13px; }
+        .tech_stack { font-size: 11px; }
+    }
+`;

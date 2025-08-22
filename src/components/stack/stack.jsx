@@ -62,10 +62,8 @@ const TechStackComponent = ({ className }) => {
 export const TechStack = styled(TechStackComponent)`
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
     gap: 20px;
     width: 100%;
-    justify-content: space-between;
     margin-bottom: 48px;
 
     .icon-block {
@@ -89,10 +87,17 @@ export const TechStack = styled(TechStackComponent)`
         color: #333;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1400px) {
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: auto;
-        max-width: 480px;
+
+        .icon {
+            width: 85px;
+            height: 85px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
 
         .icon-block {
             max-width: 80px;
@@ -103,11 +108,9 @@ export const TechStack = styled(TechStackComponent)`
             height: 80px;
         }
     }
-    
-    @media (max-width: 720px) {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        max-width: 480px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
 
         .icon-block {
             max-width: 70px;
@@ -120,8 +123,7 @@ export const TechStack = styled(TechStackComponent)`
     }
 
     @media (max-width: 480px) {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 320px;
+        grid-template-columns: repeat(2, 1fr);
 
         .icon-block {
             max-width: 60px;
@@ -139,7 +141,6 @@ export const TechStack = styled(TechStackComponent)`
 
     @media (max-width: 320px) {
         grid-template-columns: repeat(2, 1fr);
-        max-width: 200px;
 
         .icon-block {
             max-width: 50px;

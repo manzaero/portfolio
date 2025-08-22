@@ -14,4 +14,9 @@ export const Down = styled(DownFooter)`
     display: flex;
     justify-content: space-around;
     margin-bottom: 36px;
+    align-items: center;
+    @media (max-width: 1400px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
