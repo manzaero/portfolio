@@ -73,7 +73,7 @@ export const ProjectCart = styled(ProjectCartContainer)`
         border-radius: 3%;
         overflow: hidden;
         gap: 20px;
-        padding: 15px;
+        padding: 15px 0px;
     }
 
     .img {
@@ -109,14 +109,12 @@ export const ProjectCart = styled(ProjectCartContainer)`
 
     @media (max-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
-
         .title { font-size: 22px; }
         .content { font-size: 16px; }
     }
 
     @media (max-width: 768px) {
         grid-template-columns: 1fr;
-
         .title { font-size: 20px; }
         .content { font-size: 15px; }
     }
@@ -125,7 +123,6 @@ export const ProjectCart = styled(ProjectCartContainer)`
         .title { font-size: 18px; }
         .content { font-size: 14px; }
         .tech_stack { font-size: 12px; }
-
         .links {
             flex-direction: column;
             gap: 10px;
