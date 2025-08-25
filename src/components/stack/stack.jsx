@@ -45,7 +45,7 @@ const TechStackComponent = ({ className }) => {
         <>
             <Title
                 title="My Tech Stack"
-                subtitle="Technologies I’ve been working with recently"
+                subtitle="Technologies I work with"
             />
             <div className={className}>
                 {icons.map(({name, src}) => (

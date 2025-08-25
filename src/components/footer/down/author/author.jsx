@@ -3,7 +3,7 @@ import styled from "styled-components";
 const AuthorContainer = ({className}) => {
     return (
         <div className={className}>
-            Designed and built by <span>ManRt</span> with <span>Love & movement</span>
+            Designed and built by <span>ManRt</span> with <span>Love & movement</span> in 2025
         </div>
     )
 }

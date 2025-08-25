@@ -1,71 +1,65 @@
-{
-  "stacks": [
-    {
-      "id": "1",
-      "img": "/assets/images/projects/plants.png",
-      "title": "Plant store",
-      "description": "Plant shops, including flower shops, exist to meet people's needs for interior decoration, comfort, expression of feelings, and care for plants and homes. The growing popularity of such shops is associated with an increased interest in home greening, care for nature, and the desire to bring beauty and freshness into everyday life.",
-      "tech": "React, Styled components, Redux, MongoDB, Yup",
-      "url": "#",
-      "github": "https://github.com/manzaero/dip"
-    },
-    {
-      "id": "2",
-      "img": "/assets/images/projects/x-0.png",
-      "title": "Game",
-      "description": "Tic Tac Toe, also known as X and O or Noughts and Crosses, is a game for fun and to develop logical thinking. It is a simple strategy game for two players. The goal of the game is to be the first to make a line of three of your own signs (Xs or O's) horizontally, vertically or diagonally, beating your opponent.",
-      "tech": "React, CSS",
-      "url": "https://manzaero.github.io/x-0/",
-      "github": "https://github.com/manzaero/x-0"
-    },
-    {
-      "id": "3",
-      "img": "/assets/images/projects/donate.png",
-      "title": "Donate",
-      "description": "A test site for donations to allow people to voluntarily support with money those whose creativity, activities or projects they like",
-      "tech": "TypeScript, CSS, JS",
-      "url": "https://manzaero.github.io/finally/",
-      "github": "https://github.com/manzaero/finally"
-    },
-    {
-      "id": "4",
-      "img": "/assets/images/projects/sneakers.png",
-      "title": "Sneaker store",
-      "description": "A sneaker store to sell sneakers - both regular and limited edition - to different categories of customers.",
-      "tech": "Vue, Tailwind, Vercel, Axios, ",
-      "url": "https://vue-store-sigma.vercel.app/",
-      "github": "https://github.com/manzaero/vue-store"
-    },
-    {
-      "id": "5",
-      "img": "/assets/images/projects/elevator.png",
-      "title": "Elevator",
-      "description": "An example of a system with a state, events, priorities. It is necessary to think over the algorithm of movement, the queue of calls, the behavior during idle time, the priority by direction",
-      "tech": "Vue, CSS",
-      "url": "https://manzaero.github.io/elevator-vue/",
-      "github": "https://github.com/manzaero/elevator-test"
-    },
-    {
-      "id": "6",
-      "img": "/assets/images/projects/furniture.png",
-      "title": "Furniture store",
-      "description": "Furniture store for convenient furniture purchase online, without having to visit a physical store.",
-      "tech": "Vue, Material design, Vue carousel",
-      "url": "https://manzaero.github.io/port-alpina/",
-      "github": "https://github.com/manzaero/alpinia"
-    },
-    {
-      "id": "7",
-      "img": "/assets/images/projects/rest.png",
-      "title": "REST API, working with requests.",
-      "description": "Server communication, data handling, asynchronicity, backend integration, preparation for real tasks.",
-      "tech": "Vue, REST API, axios, store",
-      "url": "https://manzaero.github.io/api",
-      "github": "https://github.com/manzaero/api"
-    }
-  ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ]
-}
+[
+  {
+    "id": "1",
+    "img": "plants.png",
+    "title": "Plant store",
+    "description": "Plant shops, including flower shops, exist to meet people's needs for interior decoration, comfort, expression of feelings, and care for plants and homes. The growing popularity of such shops is associated with an increased interest in home greening, care for nature, and the desire to bring beauty and freshness into everyday life.",
+    "tech": "React, Styled components, Redux, MongoDB, Yup",
+    "url": "http://5.129.204.191/",
+    "github": "https://github.com/manzaero/dip"
+  },
+  {
+    "id": "2",
+    "img": "sneakers.png",
+    "title": "Sneaker store",
+    "description": "A sneaker store to sell sneakers - both regular and limited edition - to different categories of customers.",
+    "tech": "Vue, Tailwind, Vercel, Axios, ",
+    "url": "https://vue-store-sigma.vercel.app/",
+    "github": "https://github.com/manzaero/vue-store"
+  },
+  {
+    "id": "3",
+    "img": "furniture.png",
+    "title": "Furniture store",
+    "description": "Furniture store for convenient furniture purchase online, without having to visit a physical store.",
+    "tech": "Vue, Material design, Vue carousel",
+    "url": "https://manzaero.github.io/port-alpina/",
+    "github": "https://github.com/manzaero/alpinia"
+  },
+  {
+    "id": "4",
+    "img": "rest.png",
+    "title": "REST API, working with requests.",
+    "description": "Server communication, data handling, asynchronicity, backend integration, preparation for real tasks.",
+    "tech": "Vue, REST API, axios, store",
+    "url": "https://manzaero.github.io/api",
+    "github": "https://github.com/manzaero/api"
+  },
+  {
+    "id": "5",
+    "img": "x-0.png",
+    "title": "Game",
+    "description": "Tic Tac Toe, also known as X and O or Noughts and Crosses, is a game for fun and to develop logical thinking. It is a simple strategy game for two players. The goal of the game is to be the first to make a line of three of your own signs (Xs or O's) horizontally, vertically or diagonally, beating your opponent.",
+    "tech": "React, CSS",
+    "url": "https://manzaero.github.io/x-0/",
+    "github": "https://github.com/manzaero/x-0"
+  },
+  {
+    "id": "6",
+    "img": "donate.png",
+    "title": "Donate",
+    "description": "A test site for donations to allow people to voluntarily support with money those whose creativity, activities or projects they like",
+    "tech": "TypeScript, CSS, JS",
+    "url": "https://manzaero.github.io/finally/",
+    "github": "https://github.com/manzaero/finally"
+  },
+  {
+    "id": "7",
+    "img": "elevator.png",
+    "title": "Elevator",
+    "description": "An example of a system with a state, events, priorities. It is necessary to think over the algorithm of movement, the queue of calls, the behavior during idle time, the priority by direction",
+    "tech": "Vue, CSS",
+    "url": "https://manzaero.github.io/elevator-vue/",
+    "github": "https://github.com/manzaero/elevator-test"
+  }
+]
