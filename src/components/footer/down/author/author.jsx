@@ -26,4 +26,8 @@ export const Author = styled(AuthorContainer)`
     @media (max-width: 1400px) {
         margin: 20px auto;
     }
+    @media (max-width: 480px) {
+        span:last-child {font-size: 10px;}
+        font-size: 10px;
+    }
 `

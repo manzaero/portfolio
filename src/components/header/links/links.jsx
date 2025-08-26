@@ -50,4 +50,7 @@ export const Links = styled(LinksContainer)`
             color: #a6f6f6;
         }
     }
+    @media (max-width: 480px){
+        li {font-size: 8px;}
+    }
 `;
