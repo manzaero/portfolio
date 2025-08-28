@@ -1,5 +1,5 @@
 import gif from "../../assets/images/gifs/sticker_5.webp";
-import im from "../../assets/images/i'm.png";
+import im from "../../assets/images/i_am.png";
 import styled from "styled-components";
 
 const WelcomeContainer = ({className}) => {
