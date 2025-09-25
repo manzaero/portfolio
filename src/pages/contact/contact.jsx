@@ -5,7 +5,7 @@ const ContactContainer = ({className}) => {
         <div className={className}>
             <h1>For any questions, write or call me:</h1>
             <a className='mail' href="mailto:ligoero@gmail.com">ligoero@gmail.com</a>
-            <a className='tel' href="tel:+79915583210">+7 (991) 558-32-10</a>
+            <a className='tel' href="tel:+79915583210">+998 97 796 43 21</a>
             <a className='telegram' href="https://t.me/manzaero">@manzaero</a>
         </div>
     )
