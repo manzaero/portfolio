@@ -5,7 +5,7 @@ const contactContainer = ({className}) => {
     return (
         <div className={className}>
             <ul>
-                <li><NavLink to='#' className={className}>+7 991 558 32 10</NavLink></li>
+                <li><NavLink to='#' className={className}>+998 97 796 43 21</NavLink></li>
                 <li><NavLink to='#' className={className}>ligoero@gmail.com</NavLink></li>
             </ul>
         </div>
